@@ -1,0 +1,20 @@
+html {
+    margin: -15px;
+}
+
+img.bg-img {
+    z-index: -1;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    overflow: hidden;
+    /* scroll-behavior: auto; */
+    image-orientation: inherit;
+    size: portrait;
+}
+
+.start{
+    z-index: 1;
+    background-color: black;
+
+}
