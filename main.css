@@ -1,20 +1,73 @@
-html {
-    margin: -15px;
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Roboto',sans-serif;
+    user-select: none;
 }
 
-img.bg-img {
+button, .result_box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),
+                0px 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.3s ease;
+}
+
+
+.start button{
+    width:220px;
+    height: 67.3px;
+    font-size: 25px;
+    font-weight: 500;
+    color: red;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor:pointer;  /*what it does ? */
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2)
+                0px 6px 20px 0 rgba(0,0,0,0.19)
+
+}
+
+
+#game{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+img{
     z-index: -1;
-    width: fit-content;
-    height: fit-content;
-    position: fixed;
-    overflow: hidden;
-    /* scroll-behavior: auto; */
-    image-orientation: inherit;
-    size: portrait;
+    width:100%;
+    height:100%;
+    position:absolute;
 }
 
-.start{
-    z-index: 1;
-    background-color: black;
+#game #game-container ,
+#game #tiles{
+    position:absolute;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    z-index:2;
 
 }
+
+#game .score{
+    width:100%;
+    max-width: 600px;
+    height:auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    z-index: 5;
+}
+
