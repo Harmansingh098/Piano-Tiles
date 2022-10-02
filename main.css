@@ -72,5 +72,54 @@ img{
 }
 
 #game .score p{
-    font-size
+    font-size: 40px;
+    width: auto;
+    color: rgb(255,0,85);
+    z-index:5;
+}
+
+#game #game-container #line4{
+    border-radius: none;
+}
+
+#game #tiles div{
+    width:25%;
+    height: 30%;
+    position: absolute;
+    top: -30%;
+    background: black;
+    outline:none;
+    cursor: pointer;
+}
+
+.move{
+    transform: translateY(145vh);
+    transition: transform linear 1.5s;
+}
+
+.speedX1{
+    transition: transform linear 1.5s;
+}
+
+.speedX2{
+    transition: transform linear 1.25s;
+}
+
+.speedX3{
+    transition: transform linear 1s;
+}
+
+.speedX4{
+    transition: transform linear 0.75s;
+}
+
+.result_box{
+    background: #fff;
+    width: 450px;
+    height:auto;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-
 }
